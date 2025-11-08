@@ -1,13 +1,31 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://cdn-icons-png.flaticon.com/512/2721/2721282.png"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>my-profile</title>
+    <title>Umamahesh | Software Developer Portfolio</title>
   </head>
-  <body>
-    <div id="root"></div>
+  <body class="">
+    <div id="root">
+      <!-- 🌟 Beautiful Tailwind-based Loading Screen -->
+      <div
+        class="flex flex-col items-center justify-center h-screen gap-4 animate-pulse"
+      >
+        <div
+          class="w-16 h-16 border-4 border-orange-500 border-t-transparent rounded-full animate-spin"
+        ></div>
+        <h2 class="text-xl font-semibold tracking-wide text-orange-400">
+          Building Portfolio...
+        </h2>
+        <p class="text-slate-400 text-sm">Please wait a moment 🚀</p>
+      </div>
+    </div>
+
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
