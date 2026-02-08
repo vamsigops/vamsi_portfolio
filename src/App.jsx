@@ -18,166 +18,248 @@ import {
   X,
   FileText,
   User,
+  Cloud,
+  Server,
 } from "lucide-react";
 
 // --- Configuration Data ---
 const CONFIG = {
-  NAME: "Umamahesh Chukka",
-  TITLE: "Software Developer (Full Stack – MERN)",
+  NAME: "Vamsi Krishna",
+  TITLE: "Site Reliability & DevOps Engineer",
   TAGLINE:
-    "I build scalable, high-performance web applications using React, Node.js, Next.js, and modern UI frameworks.",
+    "Automating deployments, managing cloud infrastructure, and improving system reliability with CI/CD, Kubernetes, and AWS.",
   CONTACT: {
-    email: "chukkaumamahesh2003@gmail.com",
-    phone: "+91 9390760334",
-    location: "Bengaluru, Karnataka, India",
-    linkedin: "https://linkedin.com/in/umamahesh-chukka",
-    github: "https://github.com/umamahesh-chukka",
+    email: "vamsig.ops@gmail.com",
+    phone: "+91 9494848038",
+    location: "Bangalore, Karnataka",
+    linkedin: "https://linkedin.com/in/vamsi-krishna-895a652a3",
+    github: "https://github.com/vamsikrishna", // Assuming GitHub handle
     resumeUrl: "#",
   },
   ABOUT_PARAGRAPH:
-    "Software Developer with 1.4 years of experience in designing and building scalable web applications using the MERN stack (MongoDB, Express.js, React.js, Node.js). Currently working at a fast-paced startup, where I independently take ownership of frontend development, API integrations, and real-time features. Skilled in React.js, Redux Toolkit, JavaScript, Node.js, MongoDB, SQL (Basics), and modern UI frameworks (Ant Design, MUI, TailwindCSS). Experienced in developing applications involving chatbots, Meta APIs, RabbitMQ, and SIP integration. Focused on delivering reusable UI components, optimized performance, and end-to-end solutions that improve user experience and business workflows.",
+    "Site Reliability & DevOps Engineer with 2 years of experience automating deployments, managing cloud infrastructure, and improving system reliability. Skilled in CI/CD, Kubernetes, Infrastructure-as-Code, and Observability with hands-on AWS. Proven track record of reducing manual work, accelerating releases, and strengthening monitoring.",
 };
 
 const TECH_ICONS = [
-  { name: "React", color: "text-orange-500" },
-  { name: "Node.js", color: "text-emerald-500" },
-  { name: "Express", color: "text-slate-600" },
-  { name: "MongoDB", color: "text-green-600" },
-  { name: "Tailwind", color: "text-orange-400" },
-  { name: "JavaScript", color: "text-amber-500" },
-  { name: "Next.js", color: "text-gray-600" },
+  { name: "Python", color: "text-blue-500" },
+  { name: "Bash", color: "text-green-500" },
+  { name: "Jenkins", color: "text-orange-500" },
+  { name: "Docker", color: "text-blue-400" },
+  { name: "Kubernetes", color: "text-indigo-500" },
+  { name: "Terraform", color: "text-purple-500" },
+  { name: "AWS", color: "text-yellow-500" },
 ];
 
 const SKILLS = [
   {
-    category: "Frontend",
+    category: "Programming & Scripting",
     icon: Code,
+    items: ["Python", "Bash"],
+  },
+  {
+    category: "CI/CD & Automation",
+    icon: Zap,
+    items: ["Jenkins", "GitHub Actions", "GitLab CI", "ArgoCD"],
+  },
+  {
+    category: "Container & Orchestration",
+    icon: Database,
+    items: ["Docker", "Kubernetes", "Helm"],
+  },
+  {
+    category: "IaC & Provisioning",
+    icon: Cloud,
+    items: ["Terraform", "Ansible", "AWS CloudFormation (basics)"],
+  },
+  {
+    category: "Cloud Platforms",
+    icon: Globe,
     items: [
-      "React.js",
-      "Redux Toolkit",
-      "Next.js",
-      "JavaScript (ES6+)",
-      "Ant Design",
-      "MUI",
-      "Tailwind CSS",
-      "HTML5",
-      "CSS3",
+      "AWS (EC2, RDS, S3, Auto Scaling, Elastic Beanstalk, IAM)",
+      "GCP (GKE, Cloud Run)",
+      "Azure (basics)",
     ],
   },
   {
-    category: "Backend",
-    icon: Zap,
-    items: ["Node.js", "Express.js"],
+    category: "Monitoring & Observability",
+    icon: Lightbulb,
+    items: ["Datadog", "Prometheus", "Grafana", "ELK/EFK", "OpenTelemetry"],
   },
   {
-    category: "Database",
-    icon: Database,
-    items: ["MongoDB", "SQL (Basics)"],
+    category: "Security & Ops",
+    icon: Server,
+    items: [
+      "IAM",
+      "Secrets Management",
+      "SSL/TLS",
+      "RBAC",
+      "Network Policies",
+      "Linux",
+      "Networking",
+      "Incident Management",
+      "On-call Ops",
+    ],
+  },
+  {
+    category: "Soft Skills",
+    icon: User,
+    items: [
+      "Problem Solving",
+      "Collaboration",
+      "Time Management",
+      "Root Cause Analysis",
+    ],
   },
 ];
 
 const initialProjects = [
   {
-    name: "WhatsApp Template Management System",
+    name: "Automated Monitoring & Deployment Pipeline",
     description:
-      "Integrated Meta APIs for template creation and chatbot flows. Built interactive UIs for promotions and client engagement. Developed an interactive chat interface that allowed users to send, receive, and manage messages in real time, enhancing the overall client communication experience. (Office Project)",
-    stack: ["React", "Ant Design", "MUI", "Tailwind CSS", "Meta API"],
+      "CI/CD with Jenkins, GitHub Actions, Docker, Terraform; integrated Prometheus & Grafana for daily deployments.",
+    stack: [
+      "Jenkins",
+      "GitHub Actions",
+      "Docker",
+      "Terraform",
+      "Prometheus",
+      "Grafana",
+    ],
+    liveLink: "#",
+    githubLink: "#",
+    image:
+      "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&q=80",
+    futureIdeas: [
+      {
+        title: "Advanced GitOps Integration",
+        description:
+          "Enhance with ArgoCD for declarative deployments and automated rollbacks, reducing human error by 40%.",
+      },
+      {
+        title: "Multi-Cloud Observability",
+        description:
+          "Extend monitoring to GCP and Azure using OpenTelemetry for unified dashboards across environments.",
+      },
+      {
+        title: "AI-Driven Anomaly Detection",
+        description:
+          "Incorporate ML models in Prometheus for predictive alerting on potential incidents.",
+      },
+    ],
+  },
+  {
+    name: "High Availability Web App on AWS",
+    description:
+      "Deployed PHP + MySQL app with EC2, RDS, Auto Scaling, Beanstalk; secured with IAM and SSL.",
+    stack: [
+      "AWS EC2",
+      "RDS",
+      "Auto Scaling",
+      "Elastic Beanstalk",
+      "IAM",
+      "SSL",
+    ],
     liveLink: "#",
     githubLink: "#",
     image:
       "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&q=80",
     futureIdeas: [
       {
-        title: "AI-Powered Template Suggestions",
+        title: "Serverless Migration",
         description:
-          "Implement machine learning to analyze past conversations and suggest personalized WhatsApp templates, improving response rates by 30% through contextual recommendations.",
+          "Refactor to AWS Lambda and API Gateway for cost optimization and auto-scaling without servers.",
       },
       {
-        title: "Multi-Channel Integration",
+        title: "Enhanced Security Layers",
         description:
-          "Extend the system to support Telegram and SMS integrations, allowing unified template management across platforms for broader client reach.",
+          "Add WAF and Shield for DDoS protection, integrating with CloudWatch for real-time threat monitoring.",
       },
       {
-        title: "Analytics Dashboard with Real-Time Metrics",
+        title: "CI/CD Pipeline Automation",
         description:
-          "Add a comprehensive dashboard using Chart.js to track template performance, engagement metrics, and A/B testing results in real-time.",
+          "Integrate GitHub Actions for blue-green deployments to minimize downtime during updates.",
       },
     ],
   },
   {
-    name: "Ticket Management System",
+    name: "Kubernetes Microservices on GCP",
     description:
-      "Built a real-time platform using React.js, RabbitMQ, and SIP for call integration and ticket handling. Designed UI with Ant Design and MUI, optimizing usability and reducing resolution delays. (Office Project)",
-    stack: ["React", "RabbitMQ", "SIP", "Node.js", "Ant Design", "MUI"],
+      "Deployed microservices on GKE with Helm; configured Ingress, RBAC, monitoring with Stackdriver and OpenTelemetry.",
+    stack: [
+      "GCP GKE",
+      "Helm",
+      "Ingress",
+      "RBAC",
+      "Stackdriver",
+      "OpenTelemetry",
+    ],
     liveLink: "#",
     githubLink: "#",
     image:
       "https://images.unsplash.com/photo-1551836022-4d8bbacfdc9a?w=800&q=80",
     futureIdeas: [
       {
-        title: "AI-Driven Ticket Prioritization",
+        title: "Hybrid Cloud Setup",
         description:
-          "Incorporate NLP models to automatically categorize and prioritize tickets based on urgency and sentiment, reducing resolution time by 25%.",
+          "Integrate with AWS for multi-cloud resilience, using Istio for service mesh across providers.",
       },
       {
-        title: "Mobile-First Agent App",
+        title: "Advanced Monitoring with EFK",
         description:
-          "Develop a responsive PWA for agents to handle tickets on-the-go, with push notifications for high-priority escalations via WebSockets.",
+          "Add Elasticsearch, Fluentd, Kibana stack for centralized logging and search capabilities.",
       },
       {
-        title: "Integration with CRM Systems",
+        title: "GitOps with ArgoCD",
         description:
-          "Seamlessly connect with tools like Salesforce or HubSpot to sync customer data, enabling richer ticket contexts and automated follow-ups.",
+          "Implement continuous delivery using Git as the source of truth for cluster state.",
       },
     ],
   },
 ];
 
-const INTERVIEW_QUESTIONS = []; // Removed
-
 const EXPERIENCE = [
   {
-    title: "Software Developer",
-    company: "Voxpro Solutions Private Limited",
-    duration: "06/2024 – Present",
-    location: "Bengaluru",
+    title: "Site Reliability Engineer",
+    company: "Nextiva (Acquired Simplify360)",
+    duration: "Dec 2023 – Present",
+    location: "Bangalore",
     description: [
-      "Designed and developed reusable UI components for 5-6 projects using React.js, Ant Design, MUI, and Tailwind CSS, enhancing development efficiency in a startup setting.",
-      "Integrated Meta APIs for WhatsApp Template Management, implementing chatbot automation and auto-reply features for client engagement.",
-      "Built a Ticket Management system with RabbitMQ for real-time updates and SIP for call handling, improving issue resolution workflows.",
-      "Utilized Redux Toolkit for state management and collaborated on responsive, scalable frontend solutions across multiple projects.",
-    ],
-  },
-  {
-    title: "MERN Stack Developer Intern",
-    company: "DCT Academy",
-    duration: "10/2023 – 05/2024",
-    location: "Bengaluru",
-    description: [
-      "Developed full-stack web applications using MongoDB, Express.js, React.js, and Node.js, focusing on user authentication and RESTful APIs.",
-      "Created responsive UI components and integrated backend services, contributing to team projects.",
-      "Implemented real-time data updates, enhancing application performance and user experience.",
+      "Began with responsibilities in a startup-like environment, handling client issue debugging across UI, backend, and database logs, coordinating with QA and Development teams for fixes.",
+      "Performed manual deployments and server maintenance (disk checks, log monitoring, uptime verification), ensuring smooth product operations.",
+      "Took ownership of incident management, resolving issues quickly and reducing average ticket resolution time by 25%.",
+      "After company acquisition, drove automation initiatives by building CI/CD pipelines with Jenkins & GitHub Actions, reducing deployment time by 70%.",
+      "Automated infrastructure provisioning using Terraform modules & Ansible, enabling consistent environment setup.",
+      "Migrated applications to Docker + Kubernetes, deploying with Helm, managing RBAC, Ingress, and secrets.",
+      "Implemented observability using Datadog, Prometheus, Grafana, setting up alerts and dashboards for proactive monitoring.",
+      "Managed AWS infrastructure (EC2, RDS, S3, Auto Scaling, Elastic Beanstalk, IAM), maintaining 99.9% uptime SLA.",
+      "Enhanced cloud and platform security with IAM least-privilege policies, SSL/TLS, and AWS Secrets Manager.",
+      "Led root cause analysis and post-mortems, reducing repeat incidents by 30%.",
     ],
   },
 ];
 
 const EDUCATION = [
   {
-    institution: "Sri Venkateswara College of Engineering, Tirupati",
-    degree:
-      "Bachelor's of Technology in Electronics and Communication Engineering",
-    duration: "2019 – 2023",
-    details: "CGPA: 7.3",
+    institution: "Jain University, Bangalore",
+    degree: "B.Tech in Electronics & Communication Engineering",
+    duration: "Aug 2018 – Sep 2022",
   },
 ];
 
 const CERTIFICATIONS = [
   {
-    name: "MERN Stack Development",
-    issuer: "DCT Academy",
+    name: "Cloud & DevOps Certification",
+    issuer: "Intellipaat",
     year: "2024",
     certificateImage:
-      "https://via.placeholder.com/800x600/4F46E5/FFFFFF?text=MERN+Stack+Development+Certificate+-+DCT+Academy+2024",
+      "https://via.placeholder.com/800x600/1E40AF/FFFFFF?text=Cloud+%26+DevOps+Certification+-+Intellipaat+2024",
+  },
+  {
+    name: "Docker, Kubernetes, Terraform, AWS",
+    issuer: "LinkedIn Learning",
+    year: "2024",
+    certificateImage:
+      "https://via.placeholder.com/800x600/059669/FFFFFF?text=Docker%2C+Kubernetes%2C+Terraform%2C+AWS+-+LinkedIn+Learning+2024",
   },
 ];
 
@@ -259,7 +341,7 @@ const Modal = ({ title, content, onClose }) => {
         <div className="text-sm text-slate-600 space-y-4">{content}</div>
         <button
           onClick={onClose}
-          className="mt-6 w-full py-3 bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-semibold rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl"
+          className="mt-6 w-full py-3 bg-gradient-to-r from-blue-500 to-green-600 hover:from-blue-600 hover:to-green-700 text-white font-semibold rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl"
         >
           Close
         </button>
@@ -310,7 +392,7 @@ const GradientButton = ({
   className = "",
 }) => {
   const baseClasses =
-    "inline-flex items-center justify-center gap-2 px-5 py-2.5 text-sm font-medium text-white bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg hover:scale-[1.02] active:scale-[0.98]";
+    "inline-flex items-center justify-center gap-2 px-5 py-2.5 text-sm font-medium text-white bg-gradient-to-r from-blue-500 to-green-600 hover:from-blue-600 hover:to-green-700 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg hover:scale-[1.02] active:scale-[0.98]";
 
   const content = (
     <>
@@ -372,13 +454,13 @@ const HeroSection = () => {
   return (
     <div
       id="hero"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-50 via-orange-50 to-gray-100"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-blue-50 via-green-50 to-blue-100"
     >
       {/* Animated Background */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-orange-200/30 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob" />
-        <div className="absolute top-1/3 right-1/4 w-96 h-96 bg-gray-200/30 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-2000" />
-        <div className="absolute bottom-1/4 left-1/3 w-96 h-96 bg-orange-200/30 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-4000" />
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-200/30 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob" />
+        <div className="absolute top-1/3 right-1/4 w-96 h-96 bg-green-200/30 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-2000" />
+        <div className="absolute bottom-1/4 left-1/3 w-96 h-96 bg-blue-200/30 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-4000" />
       </div>
 
       <div className="relative z-10 px-4 sm:px-6 max-w-5xl mx-auto">
@@ -390,7 +472,7 @@ const HeroSection = () => {
             }`}
           >
             <img
-              src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&q=80"
+              src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=300&q=80" // DevOps-related image: developer working on cloud setup
               alt="Profile"
               className="w-64 h-64 rounded-full object-cover shadow-2xl border-4 border-white"
             />
@@ -407,7 +489,7 @@ const HeroSection = () => {
               Hello, I'm
             </p>
             <h1
-              className={`text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black mb-4 bg-gradient-to-r from-orange-600 via-orange-500 to-gray-600 bg-clip-text text-transparent transition-all duration-700 delay-200 ${
+              className={`text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black mb-4 bg-gradient-to-r from-blue-600 via-green-600 to-blue-600 bg-clip-text text-transparent transition-all duration-700 delay-200 ${
                 mounted
                   ? "opacity-100 translate-y-0"
                   : "opacity-0 translate-y-5"
@@ -446,9 +528,8 @@ const HeroSection = () => {
               </a>
               <GradientButton
                 icon={Download}
-                // href={CONFIG.CONTACT.resumeUrl}
-                // download
-                disabled
+                href={CONFIG.CONTACT.resumeUrl}
+                download
               >
                 Download Resume
               </GradientButton>
@@ -465,7 +546,7 @@ const AboutSection = () => {
   const [ref, inView] = useInView();
 
   return (
-    <SectionWrapper id="about" title="About Me" className="bg-gray-50">
+    <SectionWrapper id="about" title="About Me" className="bg-blue-50">
       <div
         className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start"
         ref={ref}
@@ -489,7 +570,7 @@ const AboutSection = () => {
         </div>
 
         <div
-          className={`p-8 bg-gradient-to-br from-orange-50 to-gray-100 rounded-2xl shadow-lg transition-all duration-700 delay-200 ${
+          className={`p-8 bg-gradient-to-br from-blue-100 to-green-100 rounded-2xl shadow-lg transition-all duration-700 delay-200 ${
             inView ? "opacity-100 translate-x-0" : "opacity-0 translate-x-10"
           }`}
         >
@@ -508,7 +589,7 @@ const AboutSection = () => {
                 }}
               >
                 <div
-                  className={`w-12 h-12 rounded-full bg-gradient-to-br from-orange-100 to-gray-100 flex items-center justify-center mb-2 ${tech.color}`}
+                  className={`w-12 h-12 rounded-full bg-gradient-to-br from-blue-100 to-green-100 flex items-center justify-center mb-2 ${tech.color}`}
                 >
                   <Code className="w-6 h-6" />
                 </div>
@@ -532,10 +613,10 @@ const SkillsSection = () => {
     <SectionWrapper
       id="skills"
       title="Technical Skills"
-      className="bg-gradient-to-br from-gray-50 to-orange-50"
+      className="bg-gradient-to-br from-blue-50 to-green-50"
     >
       <div
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
         ref={ref}
       >
         {SKILLS.map((skillGroup, index) => {
@@ -543,7 +624,7 @@ const SkillsSection = () => {
           return (
             <div
               key={skillGroup.category}
-              className={`p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-500 border-t-4 border-orange-500 hover:scale-[1.02] ${
+              className={`p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-500 border-t-4 border-blue-500 hover:scale-[1.02] ${
                 inView
                   ? "opacity-100 translate-y-0"
                   : "opacity-0 translate-y-10"
@@ -551,7 +632,7 @@ const SkillsSection = () => {
               style={{ transitionDelay: `${index * 100}ms` }}
             >
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center">
+                <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-500 to-green-600 flex items-center justify-center">
                   <IconComponent className="w-5 h-5 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-slate-800">
@@ -564,7 +645,7 @@ const SkillsSection = () => {
                     key={item}
                     className="flex items-center text-sm text-slate-600"
                   >
-                    <span className="w-1.5 h-1.5 rounded-full bg-orange-500 mr-2" />
+                    <span className="w-1.5 h-1.5 rounded-full bg-blue-500 mr-2" />
                     {item}
                   </li>
                 ))}
@@ -585,13 +666,16 @@ const ProjectsSection = ({ projects, onGenerateIdeas, llmLoading }) => {
     <SectionWrapper
       id="projects"
       title="Featured Projects"
-      className="bg-gray-50"
+      className="bg-blue-50"
     >
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8" ref={ref}>
+      <div
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+        ref={ref}
+      >
         {projects.map((project, index) => (
           <div
             key={index}
-            className={`group bg-gradient-to-br from-orange-50 to-gray-100 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden hover:scale-[1.02] ${
+            className={`group bg-gradient-to-br from-blue-100 to-green-100 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden hover:scale-[1.02] ${
               inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
             }`}
             style={{ transitionDelay: `${index * 150}ms` }}
@@ -603,7 +687,7 @@ const ProjectsSection = ({ projects, onGenerateIdeas, llmLoading }) => {
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 onError={(e) => {
                   e.target.src =
-                    "https://placehold.co/800x450/F59E0B/FFFFFF?text=Project+Image";
+                    "https://placehold.co/800x450/1E40AF/FFFFFF?text=Project+Image";
                 }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -620,13 +704,29 @@ const ProjectsSection = ({ projects, onGenerateIdeas, llmLoading }) => {
                 {project.stack.map((tag) => (
                   <span
                     key={tag}
-                    className="px-3 py-1 text-xs font-medium rounded-full bg-orange-100 text-orange-700"
+                    className="px-3 py-1 text-xs font-medium rounded-full bg-blue-100 text-blue-700"
                   >
                     {tag}
                   </span>
                 ))}
               </div>
               <div className="flex flex-col gap-2">
+                <div className="flex gap-2">
+                  <GradientButton
+                    href={project.liveLink}
+                    icon={Globe}
+                    className="flex-1 text-xs py-2"
+                  >
+                    Live
+                  </GradientButton>
+                  <GradientButton
+                    href={project.githubLink}
+                    icon={Github}
+                    className="flex-1 text-xs py-2"
+                  >
+                    Code
+                  </GradientButton>
+                </div>
                 <GradientButton
                   onClick={() => onGenerateIdeas(project)}
                   icon={Lightbulb}
@@ -655,7 +755,7 @@ const ExperienceSection = ({ onViewCertificate, certifications }) => {
     <SectionWrapper
       id="experience"
       title="Experience & Education"
-      className="bg-gradient-to-br from-gray-50 to-orange-50"
+      className="bg-gradient-to-br from-blue-50 to-green-50"
     >
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12" ref={ref}>
         {/* Experience */}
@@ -665,7 +765,7 @@ const ExperienceSection = ({ onViewCertificate, certifications }) => {
           }`}
         >
           <div className="flex items-center gap-3 mb-8">
-            <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center">
+            <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-500 to-green-600 flex items-center justify-center">
               <Briefcase className="w-6 h-6 text-white" />
             </div>
             <h3 className="text-3xl font-bold text-slate-800">Experience</h3>
@@ -674,14 +774,14 @@ const ExperienceSection = ({ onViewCertificate, certifications }) => {
             {EXPERIENCE.map((job, index) => (
               <div
                 key={index}
-                className="relative pl-8 before:absolute before:left-0 before:top-2 before:w-3 before:h-3 before:rounded-full before:bg-orange-500 before:ring-4 before:ring-orange-100"
+                className="relative pl-8 before:absolute before:left-0 before:top-2 before:w-3 before:h-3 before:rounded-full before:bg-blue-500 before:ring-4 before:ring-blue-100"
                 style={{
                   opacity: inView ? 1 : 0,
                   transform: inView ? "translateY(0)" : "translateY(10px)",
                   transitionDelay: `${index * 200}ms`,
                 }}
               >
-                <p className="text-sm font-medium text-orange-600 mb-1">
+                <p className="text-sm font-medium text-blue-600 mb-1">
                   {job.duration} • {job.location}
                 </p>
                 <h4 className="text-xl font-bold text-slate-800">
@@ -693,7 +793,7 @@ const ExperienceSection = ({ onViewCertificate, certifications }) => {
                 <ul className="space-y-2 text-sm text-slate-600">
                   {job.description.map((desc, i) => (
                     <li key={i} className="flex items-start">
-                      <span className="w-1.5 h-1.5 rounded-full bg-orange-500 mr-2 mt-2 flex-shrink-0" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-blue-500 mr-2 mt-2 flex-shrink-0" />
                       {desc}
                     </li>
                   ))}
@@ -711,7 +811,7 @@ const ExperienceSection = ({ onViewCertificate, certifications }) => {
         >
           <div>
             <div className="flex items-center gap-3 mb-8">
-              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-orange-500 to-gray-600 flex items-center justify-center">
+              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-green-500 to-blue-600 flex items-center justify-center">
                 <GraduationCap className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-3xl font-bold text-slate-800">Education</h3>
@@ -721,11 +821,10 @@ const ExperienceSection = ({ onViewCertificate, certifications }) => {
                 <h4 className="text-xl font-bold text-slate-800 mb-2">
                   {edu.degree}
                 </h4>
-                <p className="font-semibold text-orange-600 mb-1">
+                <p className="font-semibold text-green-600 mb-1">
                   {edu.institution}
                 </p>
                 <p className="text-sm text-slate-600 mb-2">{edu.duration}</p>
-                <p className="text-sm text-slate-600">{edu.details}</p>
               </div>
             ))}
           </div>
@@ -803,29 +902,29 @@ const ContactSection = () => {
   };
 
   return (
-    <SectionWrapper id="contact" title="Get In Touch" className="bg-gray-50">
+    <SectionWrapper id="contact" title="Get In Touch" className="bg-blue-50">
       <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
         <div className="space-y-6">
           <h3 className="text-2xl font-bold text-slate-800 mb-6">
             Contact Information
           </h3>
           <div className="space-y-4">
-            <div className="flex items-center gap-4 p-4 bg-gradient-to-r from-orange-50 to-gray-100 rounded-xl">
-              <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center flex-shrink-0">
+            <div className="flex items-center gap-4 p-4 bg-gradient-to-r from-blue-100 to-green-100 rounded-xl">
+              <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-blue-500 to-green-600 flex items-center justify-center flex-shrink-0">
                 <Mail className="w-6 h-6 text-white" />
               </div>
               <span className="text-slate-700 break-all">
                 {CONFIG.CONTACT.email}
               </span>
             </div>
-            <div className="flex items-center gap-4 p-4 bg-gradient-to-r from-gray-50 to-orange-50 rounded-xl">
-              <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-gray-500 to-gray-600 flex items-center justify-center flex-shrink-0">
+            <div className="flex items-center gap-4 p-4 bg-gradient-to-r from-green-50 to-blue-100 rounded-xl">
+              <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-green-500 to-blue-600 flex items-center justify-center flex-shrink-0">
                 <MapPin className="w-6 h-6 text-white" />
               </div>
               <span className="text-slate-700">{CONFIG.CONTACT.location}</span>
             </div>
-            <div className="flex items-center gap-4 p-4 bg-gradient-to-r from-emerald-50 to-gray-100 rounded-xl">
-              <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-emerald-500 to-emerald-600 flex items-center justify-center flex-shrink-0">
+            <div className="flex items-center gap-4 p-4 bg-gradient-to-r from-blue-100 to-green-100 rounded-xl">
+              <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-blue-500 to-green-600 flex items-center justify-center flex-shrink-0">
                 <User className="w-6 h-6 text-white" />
               </div>
               <span className="text-slate-700">{CONFIG.CONTACT.phone}</span>
@@ -842,7 +941,7 @@ const ContactSection = () => {
           </div>
         </div>
 
-        <div className="p-8 bg-gradient-to-br from-orange-50 to-gray-100 rounded-2xl shadow-lg">
+        <div className="p-8 bg-gradient-to-br from-blue-100 to-green-100 rounded-2xl shadow-lg">
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>
               <label
@@ -858,7 +957,7 @@ const ContactSection = () => {
                 value={formData.name}
                 onChange={handleChange}
                 required
-                className="w-full p-3 rounded-lg border border-slate-300 bg-white text-slate-800 focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all"
+                className="w-full p-3 rounded-lg border border-slate-300 bg-white text-slate-800 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
               />
             </div>
             <div>
@@ -875,7 +974,7 @@ const ContactSection = () => {
                 value={formData.email}
                 onChange={handleChange}
                 required
-                className="w-full p-3 rounded-lg border border-slate-300 bg-white text-slate-800 focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all"
+                className="w-full p-3 rounded-lg border border-slate-300 bg-white text-slate-800 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
               />
             </div>
             <div>
@@ -892,10 +991,10 @@ const ContactSection = () => {
                 value={formData.message}
                 onChange={handleChange}
                 required
-                className="w-full p-3 rounded-lg border border-slate-300 bg-white text-slate-800 focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all resize-none"
+                className="w-full p-3 rounded-lg border border-slate-300 bg-white text-slate-800 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all resize-none"
               ></textarea>
             </div>
-            <GradientButton type="submit" className="w-full" disabled>
+            <GradientButton type="submit" className="w-full">
               Send Message
             </GradientButton>
             {status && (
@@ -938,7 +1037,7 @@ export default function App() {
       <ul className="space-y-4">
         {project.futureIdeas.map((idea, index) => (
           <li key={index} className="p-4 bg-slate-50 rounded-xl">
-            <h4 className="font-bold mb-2 text-orange-600">
+            <h4 className="font-bold mb-2 text-blue-600">
               {index + 1}. {idea.title}
             </h4>
             <p className="text-sm text-slate-600">{idea.description}</p>
@@ -1067,11 +1166,9 @@ export default function App() {
                 .getElementById("hero")
                 ?.scrollIntoView({ behavior: "smooth" });
             }}
-            className="flex items-center gap-2 text-2xl font-bold bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent"
+            className="text-2xl font-bold bg-gradient-to-r from-blue-500 to-green-600 bg-clip-text text-transparent"
           >
-            <Code className="w-7 h-7 text-orange-500" />{" "}
-            {/* MERN/Code symbol */}
-            {CONFIG.NAME}
+            {CONFIG.NAME.split(" ")[0]}
           </a>
           <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
@@ -1086,8 +1183,8 @@ export default function App() {
                 }}
                 className={`text-sm font-medium transition-colors duration-200 ${
                   activeSection === item.id
-                    ? "text-orange-500"
-                    : "text-slate-600 hover:text-orange-500"
+                    ? "text-blue-500"
+                    : "text-slate-600 hover:text-blue-500"
                 }`}
               >
                 {item.name}
@@ -1110,7 +1207,7 @@ export default function App() {
         navItems={navItems}
       />
 
-      <main className="bg-gray-50 text-slate-800 transition-colors duration-300">
+      <main className="bg-blue-50 text-slate-800 transition-colors duration-300">
         <HeroSection />
         <AboutSection />
         <SkillsSection />
@@ -1134,7 +1231,7 @@ export default function App() {
       />
 
       {/* Footer */}
-      <footer className="bg-gradient-to-r from-gray-100 to-orange-50 py-8 border-t border-slate-200">
+      <footer className="bg-gradient-to-r from-blue-100 to-green-100 py-8 border-t border-slate-200">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl text-center">
           <p className="text-slate-600 text-sm">
             © {new Date().getFullYear()} {CONFIG.NAME}. Built with React &
@@ -1150,7 +1247,7 @@ export default function App() {
       {showScrollTop && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-8 right-8 p-3 rounded-full bg-gradient-to-r from-orange-500 to-orange-600 text-white shadow-lg hover:shadow-xl transition-all duration-300 z-40 hover:scale-110 active:scale-95"
+          className="fixed bottom-8 right-8 p-3 rounded-full bg-gradient-to-r from-blue-500 to-green-600 text-white shadow-lg hover:shadow-xl transition-all duration-300 z-40 hover:scale-110 active:scale-95"
           aria-label="Scroll to top"
         >
           <ChevronUp className="w-6 h-6" />
